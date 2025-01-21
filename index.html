@@ -215,8 +215,6 @@
             height: 100%;
             background-color: aliceblue;
             border-radius: 20px;
-
-
         }
 
         .child_box_one {
@@ -310,7 +308,41 @@
             padding: 10px;
             position: relative;
         }
+        .last_image{
+            display: flex;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .last_image img{
+            height: 55px;
+            width: 50px;
+            padding-top: 20px ;
+            margin-right: 7px;
+        }
+        .end_section{
+            margin: 0px 80px;
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            color: white;
+            width: 95%;
+            height: 100%;
+            
+        }
+        .end{
+            background-color: rgb(0, 153, 255);
+        }
+         .last_pera_two{
+            
+            display: grid;
+            justify-content: center;
 
+            
+        }
+        .education{
+            
+            font-size: 1.5em;
+        }
         @media screen and (max-width: 800px) {
             .logo h3 {
                 display: none;
@@ -493,6 +525,33 @@
 
 
     </main>
+    <footer class="end">
+        <section class="end_section">
+            <div class="last_pera_one">
+                <div class="last_image">
+                    <img src="assets/logo.png" alt="">
+                    <p class="education">Kids<br>Education</p>
+                </div>
+                <p>Education is the systematic process of improving learning,<br> knowledge, skill, and understanding about anything at<br> school, college, university, or other educational institutes<br> which gives us an enlightening experience.</p>
+            </div>
+            <div class="last_pera_two">
+                <h3>About School</h3>
+                <p>Home</p>
+                <p>About</p>
+                <p>Facilities</p>
+                <p>Admission</p>
+            </div>
+            <div class="last_pera_three">
+                <h3>Keep in Touch</h3>
+                <div class="brand_logo">
+                    <img src="assets/fb.png" alt="">
+                    <img src="assets/dribble.png" alt="">
+                    <img src="assets/twitter.png" alt=""> 
+                    <img src="assets/google+.png" alt="">
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
