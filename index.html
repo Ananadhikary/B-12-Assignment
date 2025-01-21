@@ -1,284 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Education</title>
     <style>
-       .container, .child_section{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        padding: 0px 80px;
-        
-       }
-       .search{
-        display: flex;
-       }
-       .mid{
-        display: flex;
-        
-        gap: 10px;
-       }
-       
-       .logo{
-        display: flex;
-       }
-       .logo img{
-        width: 30%;
-        height: 70%;
-        margin-top: 4%;
-        margin-right: 4%;
-       }
-       .home{
-        color: rgb(255, 166, 0);
-       }
-       .about{
-        color: rgb(49, 163, 230);
-       }
-       .facilities{
-        color: rgb(9, 224, 224);
-       }
-       .admission{
-        color: rgb(163, 89, 231);
-       }
-       .login{
-        background-color: orange;
-        border: none;
-        color: white;
-        margin-top: 15px;
-        padding: 8px 35px;
-        border-radius: 10px;
-       }
-       .search{
-        justify-content: space-between;
-    }
-    .paragraph{
-        font-size: 40px;
-        font-weight: bolder;
-    }
-    .first_content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-        
-        
-    }
-    .first_imaage{
-        display: flex;
-        justify-content: end;
-    }
-    .first_imaage img{
-        width: 400px;
-        height: 500px;
-    
-        
-    }
+        .container,
+        .child_section {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 0px 80px;
 
-    .enroll{
-        background-color: black;
-        color: white;
-        padding: 9px 28px;
-        border-radius: 10px;
-    }
-    .first_pera{
-        color: orange;
-    }
-    .second_pera{
-        color: rgb(31, 175, 241);
-    }
-    .standard{
-        text-align: center;
-        margin-top: 40px;
-        font-size:40px;
-    }
-    .second_paragraph{
-        background-image: url(assets/bg.png);
-        height: 500px;
-        
-    }
-    .box{
-        display: grid ;
-        width: 95.5%;
-        margin-top: 30px;
-        text-align: center;
-        padding: 10px;
-        
-    }
-    .inside{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-        
-        
-        
-        
-    }
-    
-    .kinder, .elementary, .middle{
-        padding-left:40% ;
-        
-    }
-    .read{
-        display: grid;
-        justify-content: center ;
-    }
-    #box_one{
-        border-radius: 20px;
-        background-image: linear-gradient( rgb(183, 243, 243) 10%, white 50%);
-        border: 1px solid rgb(186, 238, 241);
-    }
-    #box_two{
-        border-radius: 20px;
-        background-image: linear-gradient( rgb(248, 241, 199) 10%, white 50%);
-        border: 1px solid rgb(238, 185, 105);
-    }
-    #box_three{
-        border-radius: 20px;
-        background-image: linear-gradient( rgb(222, 203, 247) 10%, white 50%);
-        border: 1px solid rgb(169, 90, 205);
-    }
-    #read_one{
-        color: rgb(13, 136, 236);
-    }
-    #read_two{
-        color: rgb(253, 166, 5);
-    }
-    #read_three{
-        color: rgb(136, 13, 236);
-    }
-    .nav_button{
-        background-color: orange;
-        color: white;
-        font-weight: bolder;
-        border: none;
-        padding: 30px;
-        border-radius: 50% ;
-        margin-bottom: 30px;
-        
-    }
+        }
 
-    .buttons{
-        display: flex;
-        justify-content: center;
-        gap: 8px ;
-    }
-    .second_main{
-        border: 1px solid black;
-        background-image: url("assets/bg.png");
-        height: 2600px;
-        background-image: linear-gradient(white, rgb(240, 202, 132));
-    }
-    .child_box_one, .child_box_two, .child_box_three, .child_box_four, .child_box_five{
-        border: 1px solid green;
-        width: 100%;
-        height: 100%;
-    
-      
-    }
-    .child_box_one{
-        grid-area: child1;
-    }
-    .child_box_two{
-        grid-area: child2;
-    }
-    .child_box_three{
-        grid-area: child3;
-    }
-    .child_box_four{
-        grid-area: child4;
-    }
-    .child_box_five{
-        grid-area: child5;
-    }
-    
-    
-    .child_section{
-        margin: 100px 0px 0px 0px;
-        display: grid;
-        grid-template-areas: 
-        "child1 child1 child2 child3"
-        "child1 child1 child4 child5";
-        gap: 15px;
-       
-    }
-    .child_section h2{
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    .read_butt button{
-        background-color: aqua;
-        border: none;
-        padding: 5px 10px;
-        border-radius: 10px;
-    
-    }
-    
-    .box_image img{
-        width: 100%;
-    }
-    .stories{
-        text-align: center;
-        margin-top: 40px;
-    }
-    
-       @media screen and (max-width: 800px) {
-        .logo h3{
-            display: none;
+        .search {
+            display: flex;
         }
-        .logo img{
-            width: 40px;
+
+        .mid {
+            display: flex;
+
+            gap: 10px;
         }
-        .mid{
-            display: none;
+
+        .logo {
+            display: flex;
         }
-       
-        
-       }
+
+        .logo img {
+            width: 30%;
+            height: 70%;
+            margin-top: 4%;
+            margin-right: 4%;
+        }
+
+        .home {
+            color: rgb(255, 166, 0);
+        }
+
+        .about {
+            color: rgb(49, 163, 230);
+        }
+
+        .facilities {
+            color: rgb(9, 224, 224);
+        }
+
+        .admission {
+            color: rgb(163, 89, 231);
+        }
+
+        .login {
+            background-color: orange;
+            border: none;
+            color: white;
+            margin-top: 15px;
+            padding: 8px 35px;
+            border-radius: 10px;
+        }
+
+        .search {
+            justify-content: space-between;
+        }
+
+        .paragraph {
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        .first_content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+
+
+        }
+
+        .first_imaage {
+            display: flex;
+            justify-content: end;
+        }
+
+        .first_imaage img {
+            width: 400px;
+            height: 500px;
+
+
+        }
+
+        .enroll {
+            background-color: black;
+            color: white;
+            padding: 9px 28px;
+            border-radius: 10px;
+        }
+
+        .first_pera {
+            color: orange;
+        }
+
+        .second_pera {
+            color: rgb(31, 175, 241);
+        }
+
+        .standard {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 40px;
+        }
+
+        .second_paragraph {
+            background-image: url(assets/bg.png);
+            height: 500px;
+
+        }
+
+        .box {
+            display: grid;
+            width: 95.5%;
+            margin-top: 30px;
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        .inside {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+
+
+
+
+        }
+
+        .kinder,
+        .elementary,
+        .middle {
+            padding-left: 40%;
+
+        }
+
+        .read {
+            display: grid;
+            justify-content: center;
+        }
+
+        #box_one {
+            border-radius: 20px;
+            background-image: linear-gradient(rgb(183, 243, 243) 10%, white 50%);
+            border: 1px solid rgb(186, 238, 241);
+        }
+
+        #box_two {
+            border-radius: 20px;
+            background-image: linear-gradient(rgb(248, 241, 199) 10%, white 50%);
+            border: 1px solid rgb(238, 185, 105);
+        }
+
+        #box_three {
+            border-radius: 20px;
+            background-image: linear-gradient(rgb(222, 203, 247) 10%, white 50%);
+            border: 1px solid rgb(169, 90, 205);
+        }
+
+        #read_one {
+            color: rgb(13, 136, 236);
+        }
+
+        #read_two {
+            color: rgb(253, 166, 5);
+        }
+
+        #read_three {
+            color: rgb(136, 13, 236);
+        }
+
+        .nav_button {
+            background-color: orange;
+            color: white;
+            font-weight: bolder;
+            border: none;
+            padding: 30px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .second_main_image {
+            background-image: url("assets/bg.png");
+        }
+
+        .second_main {
+            
+
+            width: 100%;
+            height: 500%;
+            background-image: linear-gradient(white, rgb(240, 202, 132));
+        }
+
+        .child_box_one,
+        .child_box_two,
+        .child_box_three,
+        .child_box_four,
+        .child_box_five {
+
+            width: 100%;
+            height: 100%;
+            background-color: aliceblue;
+            border-radius: 20px;
+
+
+        }
+
+        .child_box_one {
+            grid-area: child1;
+        }
+
+        .child_box_two {
+            grid-area: child2;
+        }
+
+        .child_box_three {
+            grid-area: child3;
+        }
+
+        .child_box_four {
+            grid-area: child4;
+        }
+
+        .child_box_five {
+            grid-area: child5;
+        }
+
+
+        .child_section {
+            margin: 100px 0px 0px 0px;
+            display: grid;
+            grid-template-areas:
+                "child1  child2 child3"
+                "child1  child4 child5";
+            gap: 15px;
+
+        }
+
+        .child_section h2 {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+
+        .box_image img {
+            width: 100%;
+            height: 100%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .stories {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .view {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            
+        }
+
+        .view_button {
+            color: azure;
+            background-color: black;
+            padding: 10px 45px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .btn{
+            background-color: transparent;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-weight: bold;
+            color: rgb(255, 254, 254);
+            top: -20px;
+            position: absolute;
+        }
+        .btn-cyan{
+            background-color: cyan;
+            
+        }
+        .btn-green{
+            background-color: #95B226;
+            
+        }
+        .btn-purple{
+            background-color: #7A288A;
+        }
+
+        .box_button {
+            padding: 10px;
+            position: relative;
+        }
+
+        @media screen and (max-width: 800px) {
+            .logo h3 {
+                display: none;
+            }
+
+            .logo img {
+                width: 40px;
+            }
+
+            .mid {
+                display: none;
+            }
+
+
+        }
     </style>
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="first">
             <nav class="search">
                 <div class="logo">
                     <img src="assets/logo.png" alt="">
-                <h3>SCHOOL</h3>
+                    <h3>SCHOOL</h3>
                 </div>
                 <div class="mid">
-                <h5 class="home">Home</h5>
-                <h5 class="about">About</h5>
-                <h5 class="facilities">Facilities</h5>
-                <h5 class="admission">Admission</h5>
-            </div>
-            <div class="login_button">
-                <button class="login">Contact</button>
+                    <h5 class="home">Home</h5>
+                    <h5 class="about">About</h5>
+                    <h5 class="facilities">Facilities</h5>
+                    <h5 class="admission">Admission</h5>
+                </div>
+                <div class="login_button">
+                    <button class="login">Contact</button>
                 </div>
             </nav>
         </div>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
         <div class="starting">
             <div class="first_content">
-                <div class="content1"> <p class="paragraph"><span class="first_pera">Empowering</span><br>students from small<br> age <span class="second_pera">towards vision</span></p>
-                    <p class="paragraph_second">With the Courage, Confidence, Creativity, and Compassion to make<br>their Unique Contribution in a diverse and Dynamic World.</p>  
+                <div class="content1">
+                    <p class="paragraph"><span class="first_pera">Empowering</span><br>students from small<br> age <span
+                            class="second_pera">towards vision</span></p>
+                    <p class="paragraph_second">With the Courage, Confidence, Creativity, and Compassion to
+                        make<br>their Unique Contribution in a diverse and Dynamic World.</p>
                     <button class="enroll">Enroll Now</button>
                 </div>
-                    
-                
-                
-                <div class="first_imaage"> 
+
+
+
+                <div class="first_imaage">
                     <img class="hero" src="assets/hero-kids.png" alt="">
-                    
+
                 </div>
+            </div>
+
         </div>
-            
-        </div>
-
-    
 
 
 
@@ -287,104 +382,117 @@
 
 
 
-    <div class="second_paragraph">
-        <div class="standard"><strong>Standard Curriculum</strong></div>
-         <div class="inside">
-            <div class="box" id="box_one">
-                <img class="kinder" src="assets/kinder.png">
-                <h4>Kinder (3-6) Years</h4>
-                <p>Kindergarten offers an holistic and nurturing, Early Years Education for ages 3 to 6.</p>
-                <h5 class="read" id="read_one">Read More</h5>
-             </div>
-             <div class="box" id="box_two">
-                <img class="elementary" src="assets/elementary.png">
-                <h4>Elementry School</h>
-                <p>Kindergarten offers an holistic and nurturing, Early Years Education for ages 3 to 6.</p>
-                <h5 class="read" id="read_two">Read More</h5>
-             </div>
-             <div class="box" id="box_three">
-                <img class="middle" src="assets/middle.png">
-                <h4>Middle (10-16) Years</h4>
-                <p>Kindergarten offers an holistic and nurturing, Early Years Education for ages 3 to 6.</p>
-                <h5 class="read" id="read_three">Read More</h5>
-         </div>
-         </div>
-         
-    </div>
-</div>
 
 
-
-
-<div class="buttons">
-        
-    <button class="nav_button" id="next_one"><</button>
-    <button class="nav_button" id="next_two">></button>
-</div>
-
-
-<main class="second_main">
-
-    <h2 class="stories">Our Stories</h2>
-    <div class="child_section">
-        
-        <div class="child_box_one">
-            <div class="box_image">
-                <img src="assets/story-1.png" alt="">
+        <div class="second_paragraph">
+            <div class="standard"><strong>Standard Curriculum</strong></div>
+            <div class="inside">
+                <div class="box" id="box_one">
+                    <img class="kinder" src="assets/kinder.png">
+                    <h4>Kinder (3-6) Years</h4>
+                    <p>Kindergarten offers an holistic and nurturing, Early Years Education for ages 3 to 6.</p>
+                    <h5 class="read" id="read_one">Read More</h5>
+                </div>
+                <div class="box" id="box_two">
+                    <img class="elementary" src="assets/elementary.png">
+                    <h4>Elementry School</h>
+                        <p>Kindergarten offers an holistic and nurturing, Early Years Education for ages 3 to 6.</p>
+                        <h5 class="read" id="read_two">Read More</h5>
+                </div>
+                <div class="box" id="box_three">
+                    <img class="middle" src="assets/middle.png">
+                    <h4>Middle (10-16) Years</h4>
+                    <p>Kindergarten offers an holistic and nurturing, Early Years Education for ages 3 to 6.</p>
+                    <h5 class="read" id="read_three">Read More</h5>
+                </div>
             </div>
-            <div class="box_button"> 
-                <div class="read_butt"><button  id="button1">Read More</button></div>
-            <h4>A fun toddler coloring training on classroom</h4>
-            <p>Beautiful branding for changes by Never Now in Australia.<br>Changes is a platform for open discussion in an inclusive and<br>collaborative environment. providing the...</p>
-            </div>
-        </div>
-        
-        <div class="child_box_two">
-            <div class="box_image">
-                <img src="assets/story-2.png" alt="">
-            </div>
-            <div class="box_button"> 
-                <div class="read_butt"><button  id="button1">Read More</button></div>
-            <h4>Find out if a school fits the</h4>
-            <h4>family's need</h4>
-            
-            </div>
-        </div>
-        <div class="child_box_three">
-            <div class="box_image">
-                <img src="assets/story-3.png" alt="">
-            </div>
-            <div class="box_button"> 
-                <div class="read_butt"><button  id="button1">Read More</button></div>
-            <h4>Summer math & literacy </h4>
-            <h4>centers for kid</h4>
-            
-            </div>
-        </div>
-        <div class="child_box_four">
-            <div class="box_image">
-                <img src="assets/story-4.png" alt="">
-            </div>
-            <div class="box_button"> 
-                <div class="read_butt"><button  id="button1">Read More</button></div>
-            <h4>A fun toddler coloring training on classroom</h4>
-            <p>Beautiful branding for changes by Never Now in Australia.<br>Changes is a platform for open discussion in an inclusive and<br>collaborative environment. providing the...</p>
-            </div>
-        </div>
-        <div class="child_box_five">
-            <div class="box_image">
-                <img src="assets/story-5.png" alt="">
-            </div>
-            <div class="box_button"> 
-                <div class="read_butt"><button  id="button1">Read More</button></div>
-            <h4>A fun toddler coloring training on classroom</h4>
-            <p>Beautiful branding for changes by Never Now in Australia.<br>Changes is a platform for open discussion in an inclusive and<br>collaborative environment. providing the...</p>
-            </div>
+
         </div>
     </div>
-    
 
 
-</main>
+
+
+    <div class="buttons">
+
+        <button class="nav_button" id="next_one">
+            <</button>
+                <button class="nav_button" id="next_two">></button>
+    </div>
+
+
+    <main class="second_main">
+        <div class="second_main_image">
+            <h2 class="stories">Our Stories</h2>
+            <div class="child_section">
+
+                <div class="child_box_one">
+                    <div class="box_image">
+                        <img src="assets/story-1.png" alt="">
+                    </div>
+                    <div class="box_button">
+                        
+                        <button class="btn btn-cyan">Read More</button>
+                        
+                        <h4>A fun toddler coloring training on classroom</h4>
+                        <p>Beautiful branding for changes by Never Now in Australia.<br>Changes is a platform for open
+                            discussion in an inclusive and<br>collaborative environment. providing the...</p>
+                    </div>
+                </div>
+
+                <div class="child_box_two">
+                    <div class="box_image">
+                        <img src="assets/story-2.png" alt="">
+                    </div>
+                    <div class="box_button">
+                        <button class="btn btn-green">Read More</button>
+                        <h4>Find out if a school fits the</h4>
+                        <h4>family's need</h4>
+
+                    </div>
+                </div>
+                <div class="child_box_three">
+                    <div class="box_image">
+                        <img src="assets/story-3.png" alt="">
+                    </div>
+                    <div class="box_button">
+                        <button class="btn btn-purple" >Read More</button>
+                        <h4>Summer math & literacy </h4>
+                        <h4>centers for kid</h4>
+
+                    </div>
+                </div>
+                <div class="child_box_four">
+                    <div class="box_image">
+                        <img src="assets/story-4.png" alt="">
+                    </div>
+                    <div class="box_button">
+                        <button class="btn btn-green" >Read More</button>
+                        <h4>Classroom management</h4>
+                        <h4>techniques for new tutors</h4>
+
+                    </div>
+                </div>
+                <div class="child_box_five">
+                    <div class="box_image">
+                        <img src="assets/story-5.png" alt="">
+                    </div>
+                    <div class="box_button">
+                        <button class="btn btn-green">Read More</button>
+                        <h4>Conversation rhymes</h4>
+                        <h4>improve kids listening</h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="view">
+                <button class="view_button">View All</button>
+            </div>
+        </div>
+
+
+    </main>
 </body>
+
 </html>
