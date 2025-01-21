@@ -78,7 +78,7 @@
 
 
         }
-
+        
         .first_imaage {
             display: flex;
             justify-content: end;
@@ -143,7 +143,9 @@
             padding-left: 40%;
 
         }
-
+        .first{
+            border-bottom: 1px solid orange;
+        }
         .read {
             display: grid;
             justify-content: center;
@@ -347,7 +349,19 @@
             
             font-size: 1.5em;
         }
-        @media screen and (max-width: 800px) {
+        .group{
+            margin: 0px 80px;
+        }
+        marquee{
+           background-color: aliceblue;
+            color: #f5740b;
+            margin: 0px 80px;
+            padding: 20px;
+            border-block: 1px solid black   ;
+            font-size: 1.5em;
+        }
+       
+        @media screen and (max-width: 576px) {
             .logo h3 {
                 display: none;
             }
@@ -356,11 +370,36 @@
                 width: 40px;
             }
 
+
             .mid {
                 display: none;
             }
+            .first_content{ 
+                
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 20px;
+            
+
+            }
+            .all{
+                margin: 0px -80px;
+            }
+
+        }
 
 
+
+
+
+        @media screen and (min-width: 577px) {
+            .first{
+                border: none;
+            }
+            
+           
         }
         
     </style>
@@ -368,24 +407,29 @@
 
 <body class="all">
 
-    <div class="container">
-        <div class="first">
-            <nav class="search">
-                <div class="logo">
-                    <img src="assets/logo.png" alt="">
-                    <h3>SCHOOL</h3>
-                </div>
-                <div class="mid">
-                    <h5 class="home">Home</h5>
-                    <h5 class="about">About</h5>
-                    <h5 class="facilities">Facilities</h5>
-                    <h5 class="admission">Admission</h5>
-                </div>
-                <div class="login_button">
-                    <button class="login">Contact</button>
-                </div>
-            </nav>
-        </div>
+        <marquee>Kids' education focuses on developing foundational knowledge and skills, nurturing curiosity, and fostering a love of learning. It emphasizes interactive methods, play-based activities, and a supportive environment that encourages exploration and creativity.</marquee>
+
+
+
+        <div class="container">
+            <div class="first">
+                <nav class="search">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="">
+                        <h3>SCHOOL</h3>
+                    </div>
+                    <div class="mid">
+                        <h5 class="home">Home</h5>
+                        <h5 class="about">About</h5>
+                        <h5 class="facilities">Facilities</h5>
+                        <h5 class="admission">Admission</h5>
+                    </div>
+                    <div class="login_button">
+                        <button class="login">Contact</button>
+                    </div>
+                </nav>
+            </div>
+    
 
 
 
@@ -395,8 +439,7 @@
         <div class="starting">
             <div class="first_content">
                 <div class="content1">
-                    <p class="paragraph"><span class="first_pera">Empowering</span><br>students from small<br> age <span
-                            class="second_pera">towards vision</span></p>
+                    <p class="paragraph"><span class="first_pera">Empowering</span><br>students from small<br> age <span class="second_pera">towards vision</span></p>
                     <p class="paragraph_second">With the Courage, Confidence, Creativity, and Compassion to
                         make<br>their Unique Contribution in a diverse and Dynamic World.</p>
                     <button class="enroll">Enroll Now</button>
@@ -426,19 +469,19 @@
             <div class="inside">
                 <div class="box" id="box_one">
                     <img class="kinder" src="assets/kinder.png">
-                    <h4>Kinder (3-6) Years</h4>
+                    <h2>Kinder (3-6) Years</h2>
                     <p>Kindergarten offers an holistic and nurturing, Early Years Education for ages 3 to 6.</p>
                     <h5 class="read" id="read_one">Read More</h5>
                 </div>
                 <div class="box" id="box_two">
                     <img class="elementary" src="assets/elementary.png">
-                    <h4>Elementry School</h>
+                    <h2>Elementry School</h2>
                         <p>Kindergarten offers an holistic and nurturing, Early Years Education for ages 3 to 6.</p>
                         <h5 class="read" id="read_two">Read More</h5>
                 </div>
                 <div class="box" id="box_three">
                     <img class="middle" src="assets/middle.png">
-                    <h4>Middle (10-16) Years</h4>
+                    <h2>Middle (10-16) Years</h2>
                     <p>Kindergarten offers an holistic and nurturing, Early Years Education for ages 3 to 6.</p>
                     <h5 class="read" id="read_three">Read More</h5>
                 </div>
