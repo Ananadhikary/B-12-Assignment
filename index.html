@@ -8,6 +8,11 @@
     <style>
         .all{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 100vw;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            
         }
         .container,
         .child_section {
@@ -114,7 +119,7 @@
 
         .second_paragraph {
             background-image: url(assets/bg.png);
-            height: 500px;
+            
 
         }
 
@@ -205,8 +210,7 @@
         .second_main {
             
 
-            width: 100%;
-            height: 500%;
+            
             background-image: linear-gradient(white, rgb(240, 202, 132));
         }
 
@@ -214,7 +218,9 @@
         .child_box_two,
         .child_box_three,
         .child_box_four,
-        .child_box_five {
+        .child_box_five,
+        .child_box_six,
+        .child_box_seven {
 
             width: 100%;
             height: 100%;
@@ -241,14 +247,20 @@
         .child_box_five {
             grid-area: child5;
         }
+        .child_box_six {
+            grid-area: child6;
+        }
+        .child_box_seven {
+            grid-area: child7;
+        }
 
 
         .child_section {
             margin: 100px 0px 0px 0px;
             display: grid;
             grid-template-areas:
-                "child1  child2 child3"
-                "child1  child4 child5";
+                "child1 child2 child3"
+                "child1 child4 child5";
             gap: 15px;
 
         }
@@ -380,15 +392,97 @@
                 flex-direction: column-reverse;
                 justify-content: center;
                 align-items: center;
-                padding: 0px 20px;
+                
             
 
             }
+            .content1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; 
+                text-align: center;
+                padding: 20px;
+    
+}
             .all{
-                margin: 0px -80px;
+                margin: 0;
+            }
+            
+            .first_imaage img {
+                width: 90%;
+                height: 90%; 
+        
+        padding-right: 20px;
             }
 
+            .paragraph {
+                font-size: 30px; 
+            }
+
+            .paragraph_second {
+                font-size: 18px; 
+            }
+
+            .enroll {
+                width: 100%;
+                font-size: 18px;
+            }
+            .login{
+                display: none;
+            }
+            .buttons{
+                display: none;
+            }
+            .inside{
+                display: flex;
+                flex-direction: column;
+            }
+            .child_box_one{
+                display: none;
+            }
+            .child_section{
+               
+            }
+            .child_section {
+            margin: 100px 0px 0px 0px;
+            display: grid;
+            grid-template-areas:
+                " child2 child6"
+                " child7 child3"
+                " child4 child5";
+            gap: 15px;
+
         }
+        .end{
+            height: auto;
+        }
+        .end_section{
+           
+            width: 0;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            
+           
+            
+            
+        }
+        .container,
+        .child_section {
+            padding: 0 ;
+        }
+
+        marquee{
+            margin: 0;
+        }
+        .hamburger img{
+            display: ;
+            height: 20px;
+            width: 20px;
+        }
+}
+
+        
 
 
 
@@ -398,8 +492,15 @@
             .first{
                 border: none;
             }
-            
-           
+            .child_box_six {
+             display: none;
+            } 
+            .child_box_seven {
+             display: none;
+            } 
+            .hamburger{
+                display: none;
+            }
         }
         
     </style>
@@ -426,6 +527,9 @@
                     </div>
                     <div class="login_button">
                         <button class="login">Contact</button>
+                    </div>
+                    <div class="hamburger">
+                        <img src="assets/images.png" alt="">
                     </div>
                 </nav>
             </div>
@@ -512,7 +616,7 @@
                     </div>
                     <div class="box_button">
                         
-                        <button class="btn btn-cyan">Read More</button>
+                        <button class="btn btn-cyan">November 19, 2019</button>
                         
                         <h4>A fun toddler coloring training on classroom</h4>
                         <p>Beautiful branding for changes by Never Now in Australia.<br>Changes is a platform for open
@@ -525,7 +629,7 @@
                         <img src="assets/story-2.png" alt="">
                     </div>
                     <div class="box_button">
-                        <button class="btn btn-green">Read More</button>
+                        <button class="btn btn-green">November 19, 2019</button>
                         <h4>Find out if a school fits the</h4>
                         <h4>family's need</h4>
 
@@ -536,7 +640,29 @@
                         <img src="assets/story-3.png" alt="">
                     </div>
                     <div class="box_button">
-                        <button class="btn btn-purple" >Read More</button>
+                        <button class="btn btn-purple" >November 19, 2019</button>
+                        <h4>Summer math & literacy </h4>
+                        <h4>centers for kid</h4>
+
+                    </div>
+                </div>
+                <div class="child_box_six">
+                    <div class="box_image">
+                        <img src="assets/story-3.png" alt="">
+                    </div>
+                    <div class="box_button">
+                        <button class="btn btn-purple" >November 19, 2019</button>
+                        <h4>Summer math & literacy </h4>
+                        <h4>centers for kid</h4>
+
+                    </div>
+                </div>
+                <div class="child_box_seven">
+                    <div class="box_image">
+                        <img src="assets/story-3.png" alt="">
+                    </div>
+                    <div class="box_button">
+                        <button class="btn btn-purple" >November 19, 2019</button>
                         <h4>Summer math & literacy </h4>
                         <h4>centers for kid</h4>
 
@@ -547,7 +673,7 @@
                         <img src="assets/story-4.png" alt="">
                     </div>
                     <div class="box_button">
-                        <button class="btn btn-green" >Read More</button>
+                        <button class="btn btn-green" >November 19, 2019</button>
                         <h4>Classroom management</h4>
                         <h4>techniques for new tutors</h4>
 
@@ -558,7 +684,7 @@
                         <img src="assets/story-5.png" alt="">
                     </div>
                     <div class="box_button">
-                        <button class="btn btn-green">Read More</button>
+                        <button class="btn btn-green">November 19, 2019</button>
                         <h4>Conversation rhymes</h4>
                         <h4>improve kids listening</h4>
 
